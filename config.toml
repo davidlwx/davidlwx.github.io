@@ -32,7 +32,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = ">_ pikaroot"
+  name = "pikaroot"
   email = "asterlwx2001@gmail.com"
   link = ""
 
@@ -92,7 +92,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "David's personal website, blog, and portfolio."
   # website images for Open Graph and Twitter Cards
-  images = ["/assets/images/pikaroot.png"] # NEED CHANGE
+  images = ["assets/images/pikaroot.png"]
 
   [params.cv]
     enable = true
@@ -111,7 +111,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "PIKAROOT"
+      name = ">_PIKAROOT"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -162,7 +162,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/assets/images/favicon.png" # NEED CHANGE
+    svgFavicon = "assets/images/favicon.png" # NEED CHANGE
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
@@ -202,7 +202,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/assets/images/pikaroot.png"
+      avatarURL = "assets/images/pikaroot.png"
       #  title shown in home page (HTML format is supported)
       title = "David Lim a.k.a pikaroot"
       # subtitle shown in home page (HTML format is supported)
