@@ -4,7 +4,7 @@ baseURL = "https://davidlwx.github.io"
 theme = "LoveIt"
 
 # website title
-title = "DAVIDLWX"
+title = "PIKAROOT"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -32,8 +32,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "David Lim"
-  email = "davidother555@gmail.com"
+  name = ">_ pikaroot"
+  email = "asterlwx2001@gmail.com"
   link = ""
 
 # Menu config
@@ -45,7 +45,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "about"
+    name = "About"
     url = "/about/"
     # title will be shown when you hover on this menu link
     title = ""
@@ -88,16 +88,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "David Lim"
+  title = "PIKAROOT"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "David's personal website, blog, and portfolio."
   # website images for Open Graph and Twitter Cards
-  images = ["/images/david.png"] # NEED CHANGE
+  images = ["/assets/images/pikaroot.png"] # NEED CHANGE
 
   [params.cv]
     enable = true
     title = "CV"
-    description = "David's CV"
+    description = "pikaroot's CV"
     link = "/cv/cv.pdf"
 
   # Header config
@@ -111,7 +111,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "David Lim"
+      name = "PIKAROOT"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -158,11 +158,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "David Lim"
+    title = "PIKAROOT"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/images/logo.svg" # NEED CHANGE
+    svgFavicon = "/assets/images/favicon.png" # NEED CHANGE
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
@@ -202,11 +202,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/david.jpeg"
+      avatarURL = "/assets/images/pikaroot.png"
       #  title shown in home page (HTML format is supported)
-      title = "Cyber Security Individual"
+      title = "David Lim a.k.a pikaroot"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Ethical Hacking - Penetration Testing - Cyber Security"
+      subtitle = "Cyber Security | Penetration Testing | CTF"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -224,10 +224,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # Social config about the author
   [params.social]
-    GitHub = "davidlwx"
+    GitHub = "pikaroot"
     Linkedin = "limweixun"
     Twitter = "p1karoot"
-    Email = "davidother555@gmail.com"
+    Email = "asterlwx2001555@gmail.com"
     RSS = true # 
 
   #  Page global config
@@ -423,7 +423,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = "David Lim"
+        name = "PIKAROOT"
         logoUrl = ""
 
   #  TypeIt config
