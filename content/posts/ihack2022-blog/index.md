@@ -5,7 +5,7 @@ draft: false
 summary: "So, I participated my first Attack & Defense CTF competition in Malaysia."
 resources:
   - name: "featured-image"
-    src: "images/preview.webp"
+    src: "images/ihack2022-preview.png"
 tags: ["CTF", "Web", "Competition", "Attack & Defense"]
 ---
 
