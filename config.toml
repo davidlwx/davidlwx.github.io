@@ -78,6 +78,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = ""
     url = "/cv/cv.pdf"
+    noFavicon = false
+    svgFavicon = "/images/favicon.png"
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -164,7 +166,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/images/favicon.png" # NEED CHANGE
+    svgFavicon = "/images/favicon.png"
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
