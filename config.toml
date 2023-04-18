@@ -77,7 +77,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     pre = "<i class="fa fa-file-pdf-o" aria-hidden="true"></i>"
     post = ""
     name = ""
-    url = "/cv/"
+    url = "/cv/cv.pdf"
 
 [params]
   # site default theme ["auto", "light", "dark"]
