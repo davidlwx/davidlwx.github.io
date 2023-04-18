@@ -78,8 +78,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = ""
     url = "/cv/cv.pdf"
-    noFavicon = false
-    svgFavicon = "/images/favicon.png"
 
 [params]
   # site default theme ["auto", "light", "dark"]
