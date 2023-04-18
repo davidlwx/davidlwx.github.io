@@ -2,13 +2,14 @@
 title: "Red Team Ops: HAVOC 101 Workshop"
 date: 2023-02-25
 draft: false
-tags: ["`Red Teaming`", "`HAVOC`", "`Active Directory`"]
+tags: ["Red Teaming", "HAVOC", "Active Directory"]
+summary: "HAVOC C2, Active Directory, and Red Teaming."
+resources:
+  - name: "featured-image"
+  - src: "https://user-images.githubusercontent.com/107750005/221825520-4e5e2a23-3deb-435d-8445-30bc0f17bad3.png"
 ---
-HAVOC C2, Active Directory, and Red Teaming.
 
-## ☁️ Before we start
-
-![image](https://user-images.githubusercontent.com/107750005/221825520-4e5e2a23-3deb-435d-8445-30bc0f17bad3.png)
+## Before we start
 
 A short recap about the workshop. **"Red Team Ops: HAVOC 101"** is a 3-hours workshop that cover topics about red teaming techniques and Command-and-Control concepts, and it is an honour to host this session as a speaker with [Wesley](https://github.com/WesleyWong420). This workshop covers 3 main chapters:
 - Chapter 1: Introduction to Command & Control Framework
@@ -17,7 +18,7 @@ A short recap about the workshop. **"Red Team Ops: HAVOC 101"** is a 3-hours wor
 
 [Chapter 1 & 2](https://github.com/WesleyWong420/RedTeamOps-Havoc-101) had already been conducted by Wesley. However, the last chapter had not yet been completed physically due to time limitation. Therefore, I decided to write a complete guide on how to compromise a simple AD network as an alternative.
 
-## 🪟 Active Directory
+## Active Directory
 In an organization or a university, you are able to login into domain computers that you have access with your own credentials. At the same time, you can also access your workstation anytime regardless of their physical location. This is done possible thanks to the capabilities of **Active Directory (AD)**. 
 
 Active Directory is a database or set of services that connects users with the network resources they need to complete their daily work. Critical information is stored in AD, such as **users**, **computers**, and **roles**. In terms of security configurations, AD provides flexibility on different aspects of defense measures and services such as Group Policy Management, Key Distribution Center (KDC), User Access Permissions, for Administrators to reduce their workloads and apply standard protection against potential threats.
@@ -34,8 +35,9 @@ Here are some terminologies that are exclusive to an Active Directory network in
 - `Domain Computers`: Workstations in a specific domain.
 - `Domain Users`: Clients in a specific domain. They only had limited access in the domain.
 
-## 🎟️ Kerberoasting
+## Kerberoasting
 > Crash course for Kerberos authentication protocol.
+
 ![image](https://user-images.githubusercontent.com/107750005/221415624-f7b2ed9c-c9a9-4ec3-ad85-7583aca1f0f0.png)
 
 1. Whenever a `client` initiates an authentication request (login) to a domain computer, this event will be verified by the `authentication server`.
@@ -46,6 +48,7 @@ Here are some terminologies that are exclusive to an Active Directory network in
 6. Access to services are granted by the `network resources` in the domain.
 
 > A ticket-granting-ticket (TGT) acts as a universal pass for accessing all the `Network Resources` in the domain instead of providing a username and password over and over again.
+
 **Kerberos** is a crucial topic and contains some of the more well-known abuse primitives within Active Directory environments. It can also be a bit elusive as to how it works since it has so many complex intricacies.
 
 Services run on a machine under the context of a user account.  These accounts are either local to the machine (NT AUTHORITY\SYSTEM, NT AUTHORITY\LOCAL SERVICE, NT AUTHORITY\NETWORK SERVICE) or domain accounts (e.g. HAVOC\s.chisholm).  A Service Principal Name (SPN) is a unique identifier for a service instance.  SPNs are used with Kerberos to associate a service instance with a logon account, and are configured as an User Object in AD.
@@ -75,7 +78,7 @@ $ john --format=krb5tgs --wordlist=wordlist mssql_svc
 Password123!       (mssql_svc$havoc.local)
 ```
 
-## 💻 Network Verification
+## Network Verification
 Before the practical walkthrough, ensure the AD network (DC01, WORKSTATION-01, WORKSTATION-02) are interconnected as intended. Hence, it is recommended to perform the following verifications:
 
 **1) Ensure that Domain Computers are attached to the Domain Controller.**
@@ -113,9 +116,10 @@ Use the command `ipconfig` in both workstations to verify the number of adapters
 ![WORKSTATION-01](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjJlZGE4ZDgxZGI5MWY4MTZmYzU4ODMzZTBhYzJkNDFkZWFmNDE5NCZjdD1n/pDK5hqDduQHjsSh6fX/giphy.gif)
 ![WORKSTATION-02](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWQ1MDM5NTUyYjZmYWFhNjc5OTUxNDg1YjdkYWZjZDg1NzUyZDRlNyZjdD1n/SetYAeAFV0lFBNvdjV/giphy.gif)
 
-## 💉 Compromise AD Walkthrough
+## Compromise AD Walkthrough
 
 > Turn off ***Automatic Sample Submission*** from the Windows Defender Security settings in all of the VMs.
+
 ![image](https://user-images.githubusercontent.com/107750005/222167859-1e1a9173-a3ea-41a2-9ad2-c8fd9029eb1f.png)
 
 In the scenario above, you are given an **Attacker Windows** with all the essentials tools required, **Attacker Linux** with Havoc Framework pre-installed, and access to a low-privileged user in **WORKSTATION-01**. All user credentials including "Domain Admins" had also been given in the course material because it is necessary for troubleshooting purposes, but it will not be required during the walkthrough. Addtionally, to prevent machines from auto-sleeping, go to ***Start Menu > Search for "Power, sleep, and battery settings" > Screen and sleep > Select "Never"***
@@ -134,7 +138,7 @@ The Attack Chain is divided into ***5 stages*** as below:
 - Lateral Movement
 - Pivoting
 
-### 📑 Initial Access
+### Initial Access
 The first video demonstrates steps for prepping our attack from the Havoc Teamserver, which includes connecting to teamserver, creating a listener, and generating a payload.
 
 {{< youtube id="ORPrpKvO56M" >}}
@@ -152,7 +156,7 @@ The second video will cover detailed walkthrough on how to operate with our cust
 
 {{< youtube gXnUztTydKk >}}
 
-### 🚩 Local Privilege Escalation
+### Local Privilege Escalation
 An unquoted service path is where the path to the service binary is not wrapped in quotes. Why is that a problem? By itself it's not, but under specific conditions it can lead to an elevation of privilege.
 
 For enumeration, WMI can be used to pull a list of services and the path to its executable. Here are some examples:
@@ -318,7 +322,7 @@ Completing all the step, you should get a `SYSTEM` demon after starting **"HAVOC
 
 At this point, the first flag can be retrieved. Here is a video walkthrough covering Unquoted Service Path attack.
 
-{% include video id="TyFHmhjm5ig" provider="youtube" %}
+{{< youtube id="TyFHmhjm5ig" >}}
 
 > In the video, you might that an extra beacon is spawned in using `shellcode inject x64 <pid> <local/path>`. This is used for get a stable demon if the first demon is dead. This operation is optional.
 ### 💠 Kerberos
@@ -555,7 +559,7 @@ After token impersonation, list the directory in WORKSTATION-02. When you are ab
 
 Here is the video walkthrough covering Unconstrained Delegation vulnerability.
 
-{% include video id="sHB_REMIJNQ" provider="youtube" %}
+{{< youtube id="sHB_REMIJNQ" >}}
 
 ### ⏫ Lateral Movement
 At the end of this section, you will also able to get a demon callback from WORKSTATION-02 using Server Message Block (SMB) pivot connect from WORKSTATION-01.
@@ -604,7 +608,7 @@ Lastly, link the WORKSTATION-02 to WORKSTATION-01 with `pivot connect` module. T
 
 Here is the video walkthrough to demonstrate Lateral Movement in Havoc Framework.
 
-{% include video id="4gy-3BAiQmY" provider="youtube" %}
+{{< youtube id="4gy-3BAiQmY" >}}
 
 ### ⛓️ Pivoting
 Due to the current state of Havoc Framework, many pivoting attacks such as NTLM Relaying, SSH Tunneling, autorouting, etc. are relatively difficult to operate and unstable. However, here is a simple way of getting the final flag using **token impersonation** method. (Assuming that you somehow successfully retrieve the password of any Domain Admins.)
