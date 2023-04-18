@@ -74,7 +74,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [[menu.main]]
     weight = 4
     identifier = "cv"
-    pre = "<i class="fa fa-file-pdf-o" aria-hidden="true"></i>"
+    pre = "<i class='fa fa-file-pdf-o' aria-hidden="true"></i>"
     post = ""
     name = ""
     url = "/cv/cv.pdf"
