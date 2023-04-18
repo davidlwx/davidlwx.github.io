@@ -61,7 +61,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 2.5
     identifier = "ctfs"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
@@ -72,11 +72,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # title will be shown when you hover on this menu link
     title = "CTFs"
   [[menu.main]]
-    weight = 4
+    weight = 3
     identifier = "cv"
     pre = "<i class='fa fa-file-pdf-o' aria-hidden="true"></i>"
     post = ""
-    name = ""
+    name = "CV"
     url = "/cv/cv.pdf"
 
 [params]
