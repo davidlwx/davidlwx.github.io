@@ -32,9 +32,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "pikaroot"
+  name = "David Lim"
   email = "asterlwx2001@gmail.com"
-  link = ""
+  link = "https://davidlwx.github.io"
 
 # Menu config
 [menu]
@@ -111,9 +111,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = ">_PIKAROOT"
+      name = "PIKAROOT"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
+      pre = "<i class='fa-solid fa-terminal' aria-hidden='true'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       #  whether to use typeit animation for title name
