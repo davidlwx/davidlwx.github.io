@@ -5,7 +5,7 @@ draft: false
 summary: "HAVOC C2, Active Directory, and Red Teaming."
 resources:
   - name: "featured-image"
-    src: "images/havoc-preview.webp"
+    src: "images/havoc-preview.jpeg"
 tags: ["Red Teaming", "HAVOC", "Active Directory"]
 ---
 
