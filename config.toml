@@ -70,11 +70,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "CTFs"
     url = "/ctfs/"
     # title will be shown when you hover on this menu link
-    title = ""
-  [[menu.cv]]
+    title = "CTFs"
+  [[menu.main]]
     weight = 4
     identifier = "cv"
-    name = "CV"
+    pre = "<i class="fa fa-file-pdf-o" aria-hidden="true"></i>"
+    post = ""
+    name = ""
     url = "/cv/"
 
 [params]
