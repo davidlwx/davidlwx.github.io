@@ -37,7 +37,6 @@ Here are some terminologies that are exclusive to an Active Directory network in
 
 ## Kerberoasting
 > Crash course for Kerberos authentication protocol.
-
 ![image](https://user-images.githubusercontent.com/107750005/221415624-f7b2ed9c-c9a9-4ec3-ad85-7583aca1f0f0.png)
 
 1. Whenever a `client` initiates an authentication request (login) to a domain computer, this event will be verified by the `authentication server`.
@@ -610,7 +609,7 @@ Here is the video walkthrough to demonstrate Lateral Movement in Havoc Framework
 
 {{< youtube id="4gy-3BAiQmY" >}}
 
-### ⛓️ Pivoting
+### Pivoting
 Due to the current state of Havoc Framework, many pivoting attacks such as NTLM Relaying, SSH Tunneling, autorouting, etc. are relatively difficult to operate and unstable. However, here is a simple way of getting the final flag using **token impersonation** method. (Assuming that you somehow successfully retrieve the password of any Domain Admins.)
 
 From the demon of WORKSTATION-01 or WORKSTATION-02, type the following commands to retrieve the final flag without logging in the Domain Controller via user interface. 
