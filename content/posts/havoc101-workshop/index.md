@@ -2,11 +2,11 @@
 title: "Red Team Ops: HAVOC 101 Workshop"
 date: 2023-02-25
 draft: false
-tags: ["Red Teaming", "HAVOC", "Active Directory"]
 summary: "HAVOC C2, Active Directory, and Red Teaming."
 resources:
   - name: "featured-image"
-  - src: "images/havoc-preview.webp"
+    src: "images/havoc-preview.webp"
+tags: ["Red Teaming", "HAVOC", "Active Directory"]
 ---
 
 ## Before we start
@@ -325,7 +325,7 @@ At this point, the first flag can be retrieved. Here is a video walkthrough cove
 {{< youtube id="TyFHmhjm5ig" >}}
 
 > In the video, you might that an extra beacon is spawned in using `shellcode inject x64 <pid> <local/path>`. This is used for get a stable demon if the first demon is dead. This operation is optional.
-### 💠 Kerberos
+### Kerberos
 Delegation allows a user or machine to act on behalf of another user to another service.  A common implementation of this is where a user authenticates to a front-end web application that serves a back-end database. The front-end application needs to authenticate to the back-end database (using Kerberos) as the authenticated user.
 
 ![image](https://user-images.githubusercontent.com/107750005/223048931-fb1b0686-6abe-4130-bd27-122cd436f4af.png)
@@ -561,7 +561,7 @@ Here is the video walkthrough covering Unconstrained Delegation vulnerability.
 
 {{< youtube id="sHB_REMIJNQ" >}}
 
-### ⏫ Lateral Movement
+### Lateral Movement
 At the end of this section, you will also able to get a demon callback from WORKSTATION-02 using Server Message Block (SMB) pivot connect from WORKSTATION-01.
 
 ![image](https://user-images.githubusercontent.com/107750005/222970318-730d3947-bbf5-489e-8e18-38ec3b9f98da.png)
@@ -681,10 +681,10 @@ With NTLM Relaying applied, the whole compromise process should look something s
 ![image](https://user-images.githubusercontent.com/107750005/223200209-43e2ea67-b5aa-478d-8067-fcd4a9016ca9.png)
 ![image](https://user-images.githubusercontent.com/107750005/223196736-da6a9aac-b6ff-479b-8b27-b5fc9f8d89e5.png)
 
-## 🗣️ Conclusion
+## Conclusion
 I hope that this article is detailed enough to benefit people to learn interesting topics and apply these knowledge to related work such as education, certification exams, projects, home lab practice, and more. (but not for illegal actions 💀 plzzz...) Happy Hacking!
 
-## 🟦 References
+## References
 
 1. [GitHub - Havoc Framework](https://github.com/HavocFramework/Havoc)
 2. [GitHub - HAVOC 101 Workshop Course Material](https://github.com/WesleyWong420/RedTeamOps-Havoc-101)
