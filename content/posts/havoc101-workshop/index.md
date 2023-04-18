@@ -6,7 +6,7 @@ tags: ["Red Teaming", "HAVOC", "Active Directory"]
 summary: "HAVOC C2, Active Directory, and Red Teaming."
 resources:
   - name: "featured-image"
-  - src: "https://user-images.githubusercontent.com/107750005/221825520-4e5e2a23-3deb-435d-8445-30bc0f17bad3.png"
+  - src: "images/havoc-preview.png"
 ---
 
 ## Before we start
