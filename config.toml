@@ -1,4 +1,4 @@
-baseURL = "https://davidlwx.github.io/"
+baseURL = "https://pikaroot.github.io/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -229,7 +229,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     GitHub = "pikaroot"
     Linkedin = "limweixun"
     Twitter = "p1karoot"
-    Email = "asterlwx2001555@gmail.com"
+    Email = "asterlwx2001@gmail.com"
     Instagram = "pikaroot"
     RSS = true # 
 
