@@ -1,4 +1,4 @@
-baseURL = "https://pikaroot.github.io/"
+baseURL = "https://davidlwx.github.io/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
