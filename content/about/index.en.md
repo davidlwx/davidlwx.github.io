@@ -9,6 +9,4 @@ images:
 
 ## About Me
 
-{{< admonition type=info title="Brief info" >}}
-My name is `David`. I am a driven cyber security learner with a passion for penetration testing and cyber-related stuffs. With over three years of education and CTF experience, I have expertise in building solutions using Python and Bash. I am a quick learner, a team player, and always eager to take on new challenges. `Currently looking for a job.`
-{{</ admonition >}}
+>My name is `David`. I am a driven cyber security learner with a passion for penetration testing and cyber-related stuffs. With over three years of education and CTF experience, I have expertise in building solutions using Python and Bash. I am a quick learner, a team player, and always eager to take on new challenges. `Currently looking for a job.`
