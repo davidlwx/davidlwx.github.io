@@ -1,5 +1,5 @@
 ---
-ttitle: "About Me"
+title: "About Me"
 date: 2023-04-21
 draft: false
 description: "About Me"
