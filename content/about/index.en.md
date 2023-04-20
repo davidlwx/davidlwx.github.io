@@ -3,8 +3,6 @@ title: "About Me"
 date: 2023-04-21
 draft: false
 description: "About Me"
-type: "about"
-layout: "about"
 images:
   - "images/pikaroot.png"
 ---
