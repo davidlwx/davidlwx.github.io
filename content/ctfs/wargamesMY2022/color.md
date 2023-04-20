@@ -2,9 +2,9 @@
 title: "Color [STEGO]"
 date: 2022-12-24
 summary: "Basic QR Code Challenge based on RGB Color Model."
-description: "What are Isolate Groups and how they improve performance? I decided to write a brief article on the topic, which I hope will help others understand the concept and its benefits."
 tags: ["Steganography", "Stegsolve", "RGB", "QRCODE"]
 ---
+Basic QR Code Challenge based on RGB Color Model.
 
 ## Challenge Description
 > Please message us on discord if you are colorblind (Because I’m easy come, easy go, Little high, little low,)
